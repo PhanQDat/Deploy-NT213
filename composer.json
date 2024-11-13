@@ -46,8 +46,9 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+            "@php sudo service mysql restart",
+            "@php sudo mysql -u root <vulnerablelaravel.sql",
             "@php artisan key:generate --ansi",
-            "@php sudo mysql -u root <vulnerablelaravel.sql"
 
         ]
     },
