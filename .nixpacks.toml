@@ -2,4 +2,4 @@
 setup = "php.withExtensions (pe: pe.enabled ++ [])"
 
 [variables]
-PHP = "8.2"
+php = "8.2"
