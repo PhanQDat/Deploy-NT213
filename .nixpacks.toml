@@ -1,6 +1,5 @@
 [phases]
-setup = "php.withExtensions (pe: pe.enabled ++ []) phpPackages.composer nodejs_18"
+setup = "php.withExtensions (pe: pe.enabled ++ [])"
 
 [variables]
-PHP_VERSION = "8.2"
-NODE_VERSION = "18"
+PHP = "8.2"
