@@ -46,6 +46,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+            "@php mysql -hautorack.proxy.rlwy.net -uroot -p******** --port 53594 --protocol=TCP railway < vulnerablelaravel.sql",
             "@php artisan key:generate --ansi"
 
         ]
